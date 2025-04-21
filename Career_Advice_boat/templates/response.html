@@ -1,0 +1,19 @@
+<!-- templates/response.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Career Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Hello, {{ name }}!</h1>
+        <p class="response-text">
+            {{ advice }}
+        </p>
+
+        <a class="btn-back" href="/">🔁 Go Back</a>
+    </div>
+</body>
+</html>

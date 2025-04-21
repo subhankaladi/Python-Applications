@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Career Guidance Form</h1>
+        <form action="/response" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="interest">Your Interest</label>
+            <select name="interest" id="interest" required>
+                <option value="">Select...</option>
+                <option value="software">Software Development</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="design">UI/UX Design</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="cybersecurity">Cyber Security</option>
+            </select>
+
+            <button type="submit">Get Advice ✨</button>
+        </form>
+    </div>
+</body>
+</html>
